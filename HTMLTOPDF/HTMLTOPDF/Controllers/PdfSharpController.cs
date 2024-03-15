@@ -1,5 +1,4 @@
-﻿using HtmlRendererCore.PdfSharp;
-using HTMLTOPDF.Models;
+﻿using HTMLTOPDF.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
 using System.Text;
@@ -36,7 +35,7 @@ namespace HTMLTOPDF.Controllers
 
             // Generate the PDF
             Models.PdfGenerator pdfGenerator = new Models.PdfGenerator();
-            pdfGenerator.GeneratePdf(pdfFilePath, htmlContent);
+            //pdfGenerator.GeneratePdf(pdfFilePath, htmlContent);
 
             // Return the PDF file
             byte[] pdfBytes = System.IO.File.ReadAllBytes(pdfFilePath);
